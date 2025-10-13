@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTS Ishthifaiyah Nahdliyah - Sekolah Islami Penuh Prestasi</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic appeal -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Konfigurasi Custom Colors untuk skema Cream, Coklat, Putih -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-brown': '#6F4E37', // Coklat tua yang elegan
+                        'cream-bg': '#FFF8E1',     // Cream lembut
+                        'accent-light': '#FAF3DD',  // Cream yang lebih terang
+                        'neutral-white': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Mengatur font dasar dan memastikan transisi halus untuk interaksi */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Menggunakan cream-bg sebagai latar belakang utama */
+            /* Mengaktifkan smooth scroll secara global (di beberapa browser, CSS ini cukup) */
+            scroll-behavior: smooth;
+        }
+        .header-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi Bar (Cream & Coklat) -->
+    <header class="sticky top-0 z-50 bg-cream-bg header-shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Nama Sekolah -->
+                <a href="#" class="flex-shrink-0 text-xl font-bold text-primary-brown tracking-wider">
+                    MTS IN
+                </a>
+                
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#tentang" class="text-primary-brown hover:text-amber-700 transition duration-300">Tentang</a>
+                    <a href="#visimisi" class="text-primary-brown hover:text-amber-700 transition duration-300">Visi Misi</a>
+                    <a href="#profil" class="text-primary-brown hover:text-amber-700 transition duration-300">Profil</a>
+                    <a href="#guru-staff" class="text-primary-brown hover:text-amber-700 transition duration-300">Guru & Staff</a>
+                    <a href="#eskul" class="text-primary-brown hover:text-amber-700 transition duration-300">Kegiatan Eskul</a>
+                    <a href="#ppdb" class="px-4 py-1.5 rounded-full bg-primary-brown text-neutral-white hover:bg-amber-800 transition duration-300 font-semibold shadow-md">Info PPDB</a>
+                </nav>
+
+                <!-- Tombol Menu Mobile -->
+                <button id="menu-button" class="md:hidden p-2 rounded-md text-primary-brown hover:bg-accent-light focus:outline-none focus:ring-2 focus:ring-primary-brown" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile (Tersembunyi secara default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-accent-light border-t border-primary-brown/30">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="#tentang" class="text-primary-brown hover:bg-cream-bg px-3 py-2 rounded-md text-base font-medium">Tentang</a>
+                <a href="#visimisi" class="text-primary-brown hover:bg-cream-bg px-3 py-2 rounded-md text-base font-medium">Visi Misi</a>
+                <a href="#profil" class="text-primary-brown hover:bg-cream-bg px-3 py-2 rounded-md text-base font-medium">Profil</a>
+                <a href="#guru-staff" class="text-primary-brown hover:bg-cream-bg px-3 py-2 rounded-md text-base font-medium">Guru & Staff</a>
+                <a href="#eskul" class="text-primary-brown hover:bg-cream-bg px-3 py-2 rounded-md text-base font-medium">Kegiatan Eskul</a>
+                <a href="#ppdb" class="text-neutral-white bg-primary-brown hover:bg-amber-800 px-3 py-2 rounded-md text-base font-medium mt-2 text-center">Info PPDB</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Cream & Coklat) -->
+        <section class="bg-cream-bg py-20 sm:py-24 text-center border-b border-primary-brown/10">
+            <div class="max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-primary-brown mb-4 leading-tight">
+                    MTS Ishthifaiyah Nahdliyah
+                </h1>
+                <p class="text-lg sm:text-xl text-amber-800/80 mb-8 font-light">
+                    Membangun Generasi **Islami, Berprestasi, dan Berakhlak Mulia**
+                </p>
+                <a href="#ppdb" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-neutral-white bg-primary-brown hover:bg-amber-800 transition duration-300 shadow-xl transform hover:scale-105">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </section>
+
+        <!-- Tentang (About) -->
+        <section id="tentang" class="py-16 sm:py-20 bg-neutral-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-primary-brown mb-4">Tentang Kami</h2>
+                <div class="max-w-3xl mx-auto text-center text-gray-600">
+                    <p class="text-lg mb-4">
+                        MTS Ishthifaiyah Nahdliyah adalah institusi pendidikan menengah pertama berbasis agama Islam yang berkomitmen untuk menyelenggarakan pendidikan berkualitas tinggi. Kami memadukan kurikulum nasional dengan kajian keagamaan yang mendalam, menciptakan lulusan yang cerdas, terampil, dan berkarakter Islami.
+                    </p>
+                    <p class="text-lg">
+                        Berdiri sejak tahun 1990, madrasah kami telah menjadi pilihan utama bagi orang tua yang menginginkan pendidikan seimbang antara ilmu dunia dan akhirat.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visi Misi -->
+        <section id="visimisi" class="py-16 sm:py-20 bg-cream-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Visi & Misi Madrasah</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Visi Card -->
+                    <div class="bg-neutral-white p-8 rounded-xl shadow-lg border-t-4 border-primary-brown">
+                        <h3 class="text-2xl font-semibold text-primary-brown mb-4 flex items-center">
+                            <i data-lucide="eye" class="w-6 h-6 mr-3"></i> Visi
+                        </h3>
+                        <p class="text-gray-700 text-lg italic">
+                            "Menjadi madrasah unggul berbasis **IMTAQ** (Iman dan Taqwa) dan **IPTEK** (Ilmu Pengetahuan dan Teknologi) yang menghasilkan generasi berakhlak mulia dan berdaya saing global."
+                        </p>
+                    </div>
+
+                    <!-- Misi Card -->
+                    <div class="bg-neutral-white p-8 rounded-xl shadow-lg border-t-4 border-primary-brown">
+                        <h3 class="text-2xl font-semibold text-primary-brown mb-4 flex items-center">
+                            <i data-lucide="target" class="w-6 h-6 mr-3"></i> Misi
+                        </h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-primary-brown mt-1 mr-2 flex-shrink-0"></i>
+                                Melaksanakan pendidikan Islami yang integratif dan berkesinambungan.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-primary-brown mt-1 mr-2 flex-shrink-0"></i>
+                                Mengembangkan potensi akademik dan non-akademik siswa secara optimal.
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-primary-brown mt-1 mr-2 flex-shrink-0"></i>
+                                Menciptakan lingkungan belajar yang kondusif dan menjunjung tinggi nilai-nilai Aswaja.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil (Detail Madrasah) -->
+        <section id="profil" class="py-16 sm:py-20 bg-neutral-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Profil Madrasah</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center p-6 bg-accent-light rounded-xl shadow-md">
+                        <i data-lucide="map-pin" class="w-10 h-10 text-primary-brown mx-auto mb-3"></i>
+                        <h4 class="text-xl font-semibold text-primary-brown mb-2">Lokasi Strategis</h4>
+                        <p class="text-gray-700">Berada di pusat kota, mudah diakses, dengan lingkungan yang asri dan aman untuk belajar.</p>
+                    </div>
+                    <div class="text-center p-6 bg-accent-light rounded-xl shadow-md">
+                        <i data-lucide="book-open" class="w-10 h-10 text-primary-brown mx-auto mb-3"></i>
+                        <h4 class="text-xl font-semibold text-primary-brown mb-2">Kurikulum Terpadu</h4>
+                        <p class="text-gray-700">Menggabungkan Kurikulum Kemenag dan Kurikulum Nasional, fokus pada Akhlakul Karimah.</p>
+                    </div>
+                    <div class="text-center p-6 bg-accent-light rounded-xl shadow-md">
+                        <i data-lucide="calendar" class="w-10 h-10 text-primary-brown mx-auto mb-3"></i>
+                        <h4 class="text-xl font-semibold text-primary-brown mb-2">Tahun Berdiri</h4>
+                        <p class="text-gray-700">Madrasah resmi didirikan pada tahun **1990**, dengan dedikasi lebih dari 30 tahun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guru dan Staff (Contoh Card) -->
+        <section id="guru-staff" class="py-16 sm:py-20 bg-cream-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Guru dan Staff Pendidik</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Guru 1 -->
+                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
+                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
+                        <p class="font-semibold text-primary-brown">Dr. H. Ahmad Fauzi, M.Pd.</p>
+                        <p class="text-sm text-gray-600">Kepala Madrasah</p>
+                    </div>
+                    <!-- Guru 2 -->
+                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
+                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
+                        <p class="font-semibold text-primary-brown">Ustadzah Siti Aisyah, S.Ag.</p>
+                        <p class="text-sm text-gray-600">Guru Fiqih</p>
+                    </div>
+                    <!-- Guru 3 -->
+                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
+                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
+                        <p class="font-semibold text-primary-brown">Bapak Budi Santoso, S.Kom.</p>
+                        <p class="text-sm text-gray-600">Guru TIK & Staff IT</p>
+                    </div>
+                    <!-- Guru 4 -->
+                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
+                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
+                        <p class="font-semibold text-primary-brown">Ibu Rina Wati, M.Si.</p>
+                        <p class="text-sm text-gray-600">Guru Sains</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kegiatan Eskul (Extracurricular Activities) -->
+        <section id="eskul" class="py-16 sm:py-20 bg-neutral-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Kegiatan Ekstrakurikuler Unggulan</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <div class="bg-cream-bg p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300 border border-primary-brown/20">
+                        <i data-lucide="users" class="w-10 h-10 text-primary-brown mx-auto mb-3"></i>
+                        <h4 class="text-xl font-semibold text-primary-brown mb-2">Pramuka</h4>
+                        <p class="text-sm text-gray-600">Mengembangkan karakter kepemimpinan, kemandirian, dan kerjasama tim.</p>
+                    </div>
+                    
+                    <div class="bg-cream-bg p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300 border border-primary-brown/20">
+                        <i data-lucide="sword" class="w-10 h-10 text-primary-brown mx-auto mb-3"></i>
+                        <h4 class="text-xl font-semibold text-primary-brown mb-2">Futsal / Basket</h4>
+                        <p class="text-sm text-gray-600">Ajang penyaluran bakat olahraga dan meningkatkan kebugaran jasmani.</p>
+                    </div>
+
+                    <div class="bg-cream-bg p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300 border border-primary-brown/20">
+                        <i data-lucide="pen-tool" class="w-10 h-10 text-primary-brown mx-auto mb-3"></i>
+                        <h4 class="text-xl font-semibold text-primary-brown mb-2">Kaligrafi Arab</h4>
+                        <p class="text-sm text-gray-600">Melatih keindahan seni menulis huruf Arab dan menghayati Al-Qur'an.</p>
+                    </div>
+                    
+                    <div class="bg-cream-bg p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition duration-300 border border-primary-brown/20">
+                        <i data-lucide="music" class="w-10 h-10 text-primary-brown mx-auto mb-3"></i>
+                        <h4 class="text-xl font-semibold text-primary-brown mb-2">Hadroh</h4>
+                        <p class="text-sm text-gray-600">Kelompok seni musik Islami untuk melestarikan budaya dan syiar agama.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info PPDB (New Student Admission Info) -->
+        <section id="ppdb" class="py-16 sm:py-20 bg-primary-brown text-neutral-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2025/2026</h2>
+                <p class="text-xl font-light mb-8 text-amber-50">Saatnya bergabung dengan keluarga besar MTS Ishthifaiyah Nahdliyah!</p>
+
+                <div class="max-w-4xl mx-auto bg-neutral-white text-primary-brown p-8 rounded-xl shadow-2xl">
+                    <div class="grid md:grid-cols-2 gap-6 text-left">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 flex items-center">
+                                <i data-lucide="calendar-check" class="w-6 h-6 mr-2"></i> Jadwal Penting
+                            </h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>Pendaftaran Gelombang 1: 1 Januari - 31 Maret</li>
+                                <li>Pendaftaran Gelombang 2: 1 April - 30 Juni</li>
+                                <li>Pengumuman Hasil: 10 Juli</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 flex items-center">
+                                <i data-lucide="clipboard-list" class="w-6 h-6 mr-2"></i> Persyaratan Umum
+                            </h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>Mengisi formulir pendaftaran online.</li>
+                                <li>Fotokopi Ijazah/Surat Keterangan Lulus (SKL) SD/MI.</li>
+                                <li>Fotokopi Akta Kelahiran & Kartu Keluarga.</li>
+                                <li>Pas foto berwarna terbaru 3x4 (2 lembar).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-neutral-white bg-primary-brown hover:bg-amber-900 transition duration-300 shadow-lg">
+                            Unduh Brosur PPDB
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-accent-light py-8 border-t border-primary-brown/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-primary-brown">
+            <p class="text-sm">&copy; 2025 MTS Ishthifaiyah Nahdliyah. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p class="text-xs mt-1">Jl. Pendidikan No. 123, Kota Islami - Kontak: (021) 123456</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menginisialisasi ikon Lucide
+        lucide.createIcons();
+
+        // Logika untuk menu mobile (Hamburger button)
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuButton.querySelector('i');
+            
+            // Ganti ikon menu saat dibuka/ditutup
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons(); // Re-render ikon
+        });
+
+        
+        // Logika Smooth Scroll untuk semua tautan internal
+        const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+        internalLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                // 1. Mencegah aksi default (lompatan instan)
+                e.preventDefault();
+
+                // 2. Ambil ID target (e.g., "#tentang")
+                const targetId = this.getAttribute('href');
+                
+                // Cek jika ID target adalah '#' (biasanya link ke atas halaman)
+                if (targetId === '#') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // 3. Cari elemen target
+                    const targetElement = document.querySelector(targetId);
+    
+                    if (targetElement) {
+                        // 4. Lakukan smooth scroll
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start' 
+                        });
+                    }
+                }
+
+
+                // 5. Tutup menu mobile setelah klik (jika sedang terbuka)
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    menuButton.querySelector('i').setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
