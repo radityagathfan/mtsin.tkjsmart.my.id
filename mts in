@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTS Ishthifaiyah Nahdliyah - Sekolah Islami Penuh Prestasi</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide Icons for aesthetic appeal -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic appeal --><script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- Konfigurasi Custom Colors untuk skema Cream, Coklat, Putih -->
-    <script>
+    <!-- Konfigurasi Custom Colors untuk skema Cream, Coklat, Putih --><script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -42,17 +39,14 @@
 </head>
 <body>
 
-    <!-- Navigasi Bar (Cream & Coklat) -->
-    <header class="sticky top-0 z-50 bg-cream-bg header-shadow">
+    <!-- Navigasi Bar (Cream & Coklat) --><header class="sticky top-0 z-50 bg-cream-bg header-shadow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo/Nama Sekolah -->
-                <a href="#" class="flex-shrink-0 text-xl font-bold text-primary-brown tracking-wider">
+                <!-- Logo/Nama Sekolah --><a href="#" class="flex-shrink-0 text-xl font-bold text-primary-brown tracking-wider">
                     MTS IN
                 </a>
                 
-                <!-- Menu Desktop -->
-                <nav class="hidden md:flex space-x-8">
+                <!-- Menu Desktop --><nav class="hidden md:flex space-x-8">
                     <a href="#tentang" class="text-primary-brown hover:text-amber-700 transition duration-300">Tentang</a>
                     <a href="#visimisi" class="text-primary-brown hover:text-amber-700 transition duration-300">Visi Misi</a>
                     <a href="#profil" class="text-primary-brown hover:text-amber-700 transition duration-300">Profil</a>
@@ -61,15 +55,13 @@
                     <a href="#ppdb" class="px-4 py-1.5 rounded-full bg-primary-brown text-neutral-white hover:bg-amber-800 transition duration-300 font-semibold shadow-md">Info PPDB</a>
                 </nav>
 
-                <!-- Tombol Menu Mobile -->
-                <button id="menu-button" class="md:hidden p-2 rounded-md text-primary-brown hover:bg-accent-light focus:outline-none focus:ring-2 focus:ring-primary-brown" aria-label="Toggle Menu">
+                <!-- Tombol Menu Mobile --><button id="menu-button" class="md:hidden p-2 rounded-md text-primary-brown hover:bg-accent-light focus:outline-none focus:ring-2 focus:ring-primary-brown" aria-label="Toggle Menu">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Menu Mobile (Tersembunyi secara default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-accent-light border-t border-primary-brown/30">
+        <!-- Menu Mobile (Tersembunyi secara default) --><div id="mobile-menu" class="hidden md:hidden bg-accent-light border-t border-primary-brown/30">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
                 <a href="#tentang" class="text-primary-brown hover:bg-cream-bg px-3 py-2 rounded-md text-base font-medium">Tentang</a>
                 <a href="#visimisi" class="text-primary-brown hover:bg-cream-bg px-3 py-2 rounded-md text-base font-medium">Visi Misi</a>
@@ -82,8 +74,7 @@
     </header>
 
     <main>
-        <!-- Hero Section (Cream & Coklat) -->
-        <section class="bg-cream-bg py-20 sm:py-24 text-center border-b border-primary-brown/10">
+        <!-- Hero Section (Cream & Coklat) --><section class="bg-cream-bg py-20 sm:py-24 text-center border-b border-primary-brown/10">
             <div class="max-w-4xl mx-auto px-4">
                 <h1 class="text-4xl sm:text-6xl font-extrabold text-primary-brown mb-4 leading-tight">
                     MTS Ishthifaiyah Nahdliyah
@@ -97,8 +88,7 @@
             </div>
         </section>
 
-        <!-- Tentang (About) -->
-        <section id="tentang" class="py-16 sm:py-20 bg-neutral-white">
+        <!-- Tentang (About) --><section id="tentang" class="py-16 sm:py-20 bg-neutral-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-primary-brown mb-4">Tentang Kami</h2>
                 <div class="max-w-3xl mx-auto text-center text-gray-600">
@@ -112,13 +102,11 @@
             </div>
         </section>
 
-        <!-- Visi Misi -->
-        <section id="visimisi" class="py-16 sm:py-20 bg-cream-bg">
+        <!-- Visi Misi --><section id="visimisi" class="py-16 sm:py-20 bg-cream-bg">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Visi & Misi Madrasah</h2>
                 <div class="grid md:grid-cols-2 gap-10">
-                    <!-- Visi Card -->
-                    <div class="bg-neutral-white p-8 rounded-xl shadow-lg border-t-4 border-primary-brown">
+                    <!-- Visi Card --><div class="bg-neutral-white p-8 rounded-xl shadow-lg border-t-4 border-primary-brown">
                         <h3 class="text-2xl font-semibold text-primary-brown mb-4 flex items-center">
                             <i data-lucide="eye" class="w-6 h-6 mr-3"></i> Visi
                         </h3>
@@ -127,8 +115,7 @@
                         </p>
                     </div>
 
-                    <!-- Misi Card -->
-                    <div class="bg-neutral-white p-8 rounded-xl shadow-lg border-t-4 border-primary-brown">
+                    <!-- Misi Card --><div class="bg-neutral-white p-8 rounded-xl shadow-lg border-t-4 border-primary-brown">
                         <h3 class="text-2xl font-semibold text-primary-brown mb-4 flex items-center">
                             <i data-lucide="target" class="w-6 h-6 mr-3"></i> Misi
                         </h3>
@@ -151,8 +138,7 @@
             </div>
         </section>
 
-        <!-- Profil (Detail Madrasah) -->
-        <section id="profil" class="py-16 sm:py-20 bg-neutral-white">
+        <!-- Profil (Detail Madrasah) --><section id="profil" class="py-16 sm:py-20 bg-neutral-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Profil Madrasah</h2>
                 <div class="grid md:grid-cols-3 gap-8">
@@ -175,41 +161,25 @@
             </div>
         </section>
 
-        <!-- Guru dan Staff (Contoh Card) -->
-        <section id="guru-staff" class="py-16 sm:py-20 bg-cream-bg">
+        <!-- Guru dan Staff (Contoh Card) --><section id="guru-staff" class="py-16 sm:py-20 bg-cream-bg">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Guru dan Staff Pendidik</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                    <!-- Guru 1 -->
-                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
-                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
-                        <p class="font-semibold text-primary-brown">Dr. H. Ahmad Fauzi, M.Pd.</p>
-                        <p class="text-sm text-gray-600">Kepala Madrasah</p>
+                <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Kepala Madrasah & Kesiswaan</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <!-- Kepala Madrasah --><div class="bg-neutral-white p-6 text-center rounded-xl shadow-lg border-b-2 border-primary-brown w-full sm:w-64">
+                        <img src="https://placehold.co/180x180/6F4E37/FFFFFF?text=Foto+Kepala+Sekolah" onerror="this.src='https://placehold.co/180x180/6F4E37/FFFFFF?text=Foto+Kepala+Sekolah'" alt="Foto Kepala Madrasah" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 border-primary-brown/50">
+                        <p class="text-xl font-semibold text-primary-brown">Dr. H. Ahmad Fauzi, M.Pd.</p>
+                        <p class="text-md text-gray-600">Kepala Madrasah</p>
                     </div>
-                    <!-- Guru 2 -->
-                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
-                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
-                        <p class="font-semibold text-primary-brown">Ustadzah Siti Aisyah, S.Ag.</p>
-                        <p class="text-sm text-gray-600">Guru Fiqih</p>
-                    </div>
-                    <!-- Guru 3 -->
-                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
-                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
-                        <p class="font-semibold text-primary-brown">Bapak Budi Santoso, S.Kom.</p>
-                        <p class="text-sm text-gray-600">Guru TIK & Staff IT</p>
-                    </div>
-                    <!-- Guru 4 -->
-                    <div class="bg-neutral-white p-4 text-center rounded-xl shadow-lg border-b-2 border-primary-brown">
-                        <img src="https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto" onerror="this.src='https://placehold.co/150x150/6F4E37/FFFFFF?text=Foto'" alt="Foto Guru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-primary-brown/50">
-                        <p class="font-semibold text-primary-brown">Ibu Rina Wati, M.Si.</p>
-                        <p class="text-sm text-gray-600">Guru Sains</p>
+                    <!-- Staff Kesiswaan --><div class="bg-neutral-white p-6 text-center rounded-xl shadow-lg border-b-2 border-primary-brown w-full sm:w-64">
+                        <img src="https://placehold.co/180x180/6F4E37/FFFFFF?text=Foto+Staff+Kesiswaan" onerror="this.src='https://placehold.co/180x180/6F4E37/FFFFFF?text=Foto+Staff+Kesiswaan'" alt="Foto Staff Kesiswaan" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 border-primary-brown/50">
+                        <p class="text-xl font-semibold text-primary-brown">Ustadzah Fitriana, S.Pd.I.</p>
+                        <p class="text-md text-gray-600">Waka Kesiswaan</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Kegiatan Eskul (Extracurricular Activities) -->
-        <section id="eskul" class="py-16 sm:py-20 bg-neutral-white">
+        <!-- Kegiatan Eskul (Extracurricular Activities) --><section id="eskul" class="py-16 sm:py-20 bg-neutral-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-primary-brown mb-12">Kegiatan Ekstrakurikuler Unggulan</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -241,8 +211,7 @@
             </div>
         </section>
 
-        <!-- Info PPDB (New Student Admission Info) -->
-        <section id="ppdb" class="py-16 sm:py-20 bg-primary-brown text-neutral-white">
+        <!-- Info PPDB (New Student Admission Info) --><section id="ppdb" class="py-16 sm:py-20 bg-primary-brown text-neutral-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold mb-4">Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2025/2026</h2>
                 <p class="text-xl font-light mb-8 text-amber-50">Saatnya bergabung dengan keluarga besar MTS Ishthifaiyah Nahdliyah!</p>
@@ -281,8 +250,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-accent-light py-8 border-t border-primary-brown/10">
+    <!-- Footer --><footer class="bg-accent-light py-8 border-t border-primary-brown/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-primary-brown">
             <p class="text-sm">&copy; 2025 MTS Ishthifaiyah Nahdliyah. Hak Cipta Dilindungi Undang-Undang.</p>
             <p class="text-xs mt-1">Jl. Pendidikan No. 123, Kota Islami - Kontak: (021) 123456</p>
